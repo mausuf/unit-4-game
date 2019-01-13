@@ -1,0 +1,11 @@
+.container{
+    border: solid gray 1px;
+}
+
+.crystalboxes{
+    border: solid 2px orange;
+    float: left;
+    height: 100px;
+    width: 100px;
+     
+}

@@ -5,19 +5,21 @@ var crystal4;
 var wins = 0; //Number of wins
 var losses = 0; //Number of losses
 var userCrystalClicked = []; 
-var randomGeneratedNumber;
+var randomGeneratedNumber; //Number generated @ start of game
 
-//Option 1 Game design notes
 //The random number shown at the start of the game should be between 19 - 120.
-//Each crystal should have a random hidden value between 1 - 12.
-
 function randomGeneratedNumber(min,max) {
     return Math.floor(Math.random() * 101+19);
   }
-
-console.log(randomGeneratedNumber(120));
-
+console.log(randomGeneratedNumber());
+$("#computerNumber").html('Random Result: ');
+//Each crystal should have a random hidden value between 1 - 12.
+for(var i=0; i<4; i++){
+    var randomCrystalNumber = Math.floor(Math.random()*12+1);
+    console.log (randomCrystalNumber);
+}
 document.onclick = function(event) {
+
 
 var userCrystalClicked = event.key; //How to capture what was pressed on click
 var computernumber  = randomGeneratedNumber[Math.floor(Math.random() * randomGeneratedNumber.length)];
