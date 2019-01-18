@@ -26,9 +26,7 @@ var computernumber  = randomGeneratedNumber[Math.floor(Math.random() * randomGen
 
 }
 
-document.getElementById("wins").innerHTML = wins;
-document.getElementById("losses").innerHTML = losses;
-document.getElementById("totalScore").innerHTML = totalScore;
+
 
 
 
