@@ -1,12 +1,26 @@
-var crystal1; 
-var crystal2;
-var crystal3;
-var crystal4;
+//create object to hold all global variables
+var crystals = {
+crystal1,
+crystal2,
+crystal3,
+crystal4,
+}
+
 var wins = 0; //Number of wins
 var losses = 0; //Number of losses
 var userCrystalClicked = []; 
-var randomGeneratedNumber; //Number generated @ start of game
+var randomGeneratedNumber = 50; //Number generated @ start of game
+var counter = 0; //Counts number of clicks
+var numberToGuess;
 
+//------------------------------------------------
+$(".crystalboxes").on("click", function() {
+    // Clicking the button triggers an alert message.
+    alert("You clicked a crystal!" + counter + "times");
+  });
+//------------------------------------------------
+$("numberToGuess").text("randomGeneratedNumber")
+//------------------------------------------------
 //The random number shown at the start of the game should be between 19 - 120.
 function randomGeneratedNumber(min,max) {
     return Math.floor(Math.random() * 101+19);
