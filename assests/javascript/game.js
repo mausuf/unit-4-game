@@ -1,9 +1,7 @@
 var wins = 0; //Number of wins
 var losses = 0; //Number of losses
-var userCrystalClicked = []; 
-var randomGeneratedNumber = 50; //Number generated @ start of game
-var counter = 0; //Counts number of clicks
-var numberToGuess;
+var randomTargetNumber = 50; //Number generated @ start of game
+var counter = 0;
 
 //------------------------------------------------
 $(".crystalboxes").on("click", function() {
@@ -14,7 +12,7 @@ $(".crystalboxes").on("click", function() {
 $("numberToGuess").text("randomGeneratedNumber")
 //------------------------------------------------
 //The random number shown at the start of the game should be between 19 - 120.
-function randomGeneratedNumber(min,max) {
+function randomTargetNumber(min,max) {
     return Math.floor(Math.random() * 101+19);
   }
 console.log(randomGeneratedNumber());
@@ -61,9 +59,9 @@ The app should show the number of games the player wins and loses. To that end, 
 /**
  * Returns a random number between min (inclusive) and max (exclusive)
  */
-function getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min;
-}
+//function getRandomArbitrary(min, max) {
+ //   return Math.random() * (max - min) + min;
+//}
 /**
  * Returns a random integer between min (inclusive) and max (inclusive).
  * The value is no lower than min (or the next integer greater than min

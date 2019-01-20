@@ -26,10 +26,10 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
+       <!-- jQuery library -->
+       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Javascript -->
-    <script src="assests/javascript/game.js"></script>
-    <!-- jQuery library -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assests/javascript/gameTest.js"></script>
   </head>
   <!---============================Body==============================--> 
   <body>
@@ -50,5 +50,46 @@
             <div class="col" id="crystals">test</div>
           </div>
       </div>
+  
+
+  <!--SCRIPT ISNT BEING DETECTED IN SEPERATE JS FILE, SO WRITING HERE, AS TO NOT WASTE TIME-->
+  <script>
+    var randomTargetNumber = 56;
+    $("#number-to-guess").text(randomTargetNumber);
+
+    var counter = 0;
+
+    var numberOptions = [3,5,8,12];
+    for(var i=0; i<numberOptions.length; i++){
+      var imageCrystal = $("<img>");
+      imageCrystal.addClass("crystalBoxes");
+      imageCrystal.attr("src","https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/1/1c/2-Star_Crystal.png/revision/latest?cb=20150825213642");
+      imageCrystal.attr("data-crystalValue",numberOptions[i]);
+      $("#crystals").append(imageCrystal);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+ 
   </body>
 </html>
