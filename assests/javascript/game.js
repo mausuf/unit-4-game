@@ -1,6 +1,6 @@
 var wins = 0; //Number of wins
 var losses = 0; //Number of losses
-var randomTargetNumber = 50; //Number generated @ start of game
+var randomTargetNumber; //Number generated @ start of game
 var counter = 0;
 
 //------------------------------------------------

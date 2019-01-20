@@ -1,5 +1,6 @@
 .container{
     border: solid gray 1px;
+    margin-top: 100px;
 }
 
 .crystalBoxes{
@@ -7,5 +8,13 @@
     float: left;
     height: 100px;
     width: 100px;
-     
+}
+
+body {
+    background-image: url("https://www.hdwallpaperslife.com/wp-content/uploads/2018/11/colorful_crystals_abstract_4k.jpg");
+    background-color: purple;
+  }
+
+.col {
+    color: white;
 }

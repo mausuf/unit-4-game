@@ -54,15 +54,16 @@
 
   <!--SCRIPT ISNT BEING DETECTED IN SEPERATE JS FILE, SO WRITING HERE, AS TO NOT WASTE TIME-->
   <script>
-    //Write random generated number to html
-    var randomTargetNumber = 12;
-    $("#number-to-guess").text(randomTargetNumber);
-    //
-    var counter = 0;
-    var wins = 0;
-    var losses = 0;
+    
+  
+    
+    
+    
+    
 
-    var numberOptions = [3,5,8,12];
+    //Random crystal values
+    var numberOptions = [3,4,5,10];
+
     //Function to dynamticaly create crystals and append to html
     for(var i=0; i<numberOptions.length; i++){
       var imageCrystal = $("<img>");
@@ -72,8 +73,20 @@
       $("#crystals").append(imageCrystal);
     };
 
-    //Function to determine what happens upon clicking ANY crystals
+    //Write random generated number to html
+    var randomTargetNumber = 90;
+    //function randomTarget(){ 
+    //return Math.floor(Math.random() * 101+19);};
+    $("#number-to-guess").text(randomTargetNumber);
+    
+
+    //Variables below
+    var counter = 0;
+    var wins = 0;
+    var losses = 0;
+    //Function to determine what happens upon clicking ANY crystals (alert wins and losses)
     $(".crystalBoxes").on("click", function() {
+
         var crystalValue = ($(this).attr("data-crystalValue"));
         crystalValue = parseInt(crystalValue);
 
