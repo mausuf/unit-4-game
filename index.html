@@ -28,32 +28,27 @@
     />
     <!-- Javascript -->
     <script src="assests/javascript/game.js"></script>
+    <!-- jQuery library -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
-    <!--Body-->
-   
+  <!---============================Body==============================--> 
   <body>
       <div class="container">
           <div class="row">
             <div class="col">
-              <div class="computerNumber" id="computerNumber"></div>
-              Instructions:
+              <h3>Number to Guess: <span id="number-to-guess"></span></h3>
               <br>
-              <div id="score"></div>
-              Score:
+              <h3>Score: <span id="player-score"></span></h3>
               <br>
-              <div id="wins"></div>
-              Wins:
+              <h3>Wins: <span id="player-wins"></span></h3>
               <br>
-              <div id="losses"></div>
-              Losses:
+              <h3>Losses: <span id="player-losses"></span></h3>
             </div>
-        <div class="w-100"></div>
-            <div class="col" id="crystals">
-                <div>Crystals</div>
-                <div class="crystalboxes">1</div>
-          
-            </div>
+            <!--New Column-->
+            <div class="w-100"></div>
+            <!--Dynamic crystals will be inserted below-->
+            <div class="col" id="crystals">test</div>
           </div>
-        </div>
+      </div>
   </body>
 </html>

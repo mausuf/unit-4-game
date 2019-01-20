@@ -1,11 +1,3 @@
-//create object to hold all global variables
-var crystals = {
-crystal1,
-crystal2,
-crystal3,
-crystal4,
-}
-
 var wins = 0; //Number of wins
 var losses = 0; //Number of losses
 var userCrystalClicked = []; 
@@ -72,7 +64,6 @@ The app should show the number of games the player wins and loses. To that end, 
 function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
 }
-
 /**
  * Returns a random integer between min (inclusive) and max (inclusive).
  * The value is no lower than min (or the next integer greater than min
@@ -80,9 +71,4 @@ function getRandomArbitrary(min, max) {
  * lower than max if max isn't an integer).
  * Using Math.round() will give you a non-uniform distribution!
  */
-function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
 //NOTES END//
