@@ -62,7 +62,7 @@
     
 
     //Random crystal values
-    var numberOptions = Array.from({length: 4}, () => Math.floor(Math.random() * 40));
+    var numberOptions = Array.from({length: 4}, () => Math.floor(Math.random() * 12));
     //var numberOptions = [3,4,5,10];
 
     //Function to dynamticaly create crystals and append to html
@@ -97,11 +97,14 @@
         if (counter === randomTargetNumber){
           alert("You win!");
           wins += 1;
-          $("#player-wins").text(wins);}
+          $("#player-wins").text(wins);
+          counter = 0;}
         else if (counter > randomTargetNumber){
           alert("You lose!");
           losses += 1;
-          $("#player-losses").text(losses);}
+          $("#player-losses").text(losses);
+          counter = 0;}   
+        
     });
     
 
