@@ -62,7 +62,8 @@
     
 
     //Random crystal values
-    var numberOptions = [3,4,5,10];
+    var numberOptions = Array.from({length: 4}, () => Math.floor(Math.random() * 40));
+    //var numberOptions = [3,4,5,10];
 
     //Function to dynamticaly create crystals and append to html
     for(var i=0; i<numberOptions.length; i++){
